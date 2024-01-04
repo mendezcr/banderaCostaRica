@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Bandera de Costa Rica</title>
+    <style>
+      .bandera {
+        height: 600px;
+        width: 900px;
+        position: relative;
+        background-color: blue;
+      }
+
+      #blanco {
+        height: 400px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+      }
+
+      #rojo{
+        height: 200px;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        top: 100px;
+      }
+
+      .escudo{
+        height: 180px;
+        width: 160px;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        border-radius: 50%;
+      }
+
+      img{
+        height: 160px;
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+      }
+
+      p{
+        font-size: 5rem;
+        font-style: italic;
+        text-align: left;
+        color: white;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+      }
+
+      .bandera > div > p{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bandera">
+      <p id="azul">La bandera de</p>
+      <div id="blanco">
+        <p>Costa Rica</p>
+        <div id="rojo">
+          <div class="escudo">
+            <img src="../7.3 CSS Flag Project/escudoCR.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
